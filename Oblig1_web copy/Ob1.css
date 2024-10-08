@@ -1,0 +1,277 @@
+/*Fonts extracted from Roboto Folder*/
+@font-face {
+    font-family: "font1";
+    src: url(./Roboto/Roboto-Bold.ttf) format(truetype);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "font2";
+    src: url(./Roboto/Roboto-Regular.ttf) format(truetype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "font3";
+    src: url(./Roboto/Roboto-Light.ttf) format(truetype);
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "italic";
+    src: url(./Roboto/Roboto-Italic.ttf) format(truetype);
+    font-weight: light;
+}
+* {
+    font-family: "font2", sans-serif;
+}
+
+/*header logo*/
+header > h3 {
+    text-align: center;
+    font-family: "font2";
+}
+
+/*Navigation at the top of the page*/
+.topnav {
+    text-align: center;
+    font-family: "font3";
+    padding-bottom: 20px;
+    border-bottom: solid rgb(52, 59, 72) 1px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-family: "font2";
+    padding: 0 5px;
+}
+
+/*the two items in header*/
+.flex-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    row-gap: 30px;
+}
+.flex-container h1 {
+    margin: 0;
+}
+
+/*Item 1 header*/
+.item1 {
+    grid-column-start: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Item 2 header*/
+.item2 {
+    grid-column-start: 3;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(110, 115, 124);
+    padding: 90px;
+}
+.button {
+    background-color: #3954ea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.item1 h1 {
+    font-family: "font1", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+/*h1 before lorem ipsum*/
+body h1 {
+    font-family: "font1", sans-serif;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/*Lorem ipsum (border square and text)*/
+.lorem-grid {
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    word-spacing: 1px;
+    text-align: justify;
+    grid-row-gap: 50px;
+    column-gap: 30px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.lor1,
+.lor2,
+.border1,
+.border2 {
+    font-family: "font2";
+    font-size: 110%;
+    line-height: 1.5;
+}
+
+.border1,
+.border2 {
+    border: solid;
+    border-width: thick;
+    border-color: rgb(75, 128, 236);
+    border-radius: 10px;
+    height: 100%;
+}
+
+.border1 {
+    grid-column: 7 / span 4;
+}
+.border2 {
+    grid-row-start: 2;
+    grid-column: 12 / span 4;
+}
+.lor1 {
+    grid-column: span 5;
+}
+.lor2 {
+    grid-column: 7 / span 5;
+    grid-row-start: 2;
+}
+/*Thor's Quote*/
+.thorQuote {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    background-color: rgb(228, 229, 234);
+    border: solid #e4e5ebce;
+    border-left: none;
+    border-right: none;
+    padding-top: 100px;
+    margin-top: 50px;
+}
+
+.quote {
+    text-align: justify;
+    grid-column-start: 2;
+    font-family: "italic";
+    font-size: x-large;
+    text-shadow: -5px 5px 5px #9a9a9a;
+}
+.thor {
+    text-align: right;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    font-family: "font1";
+    font-size: larger;
+}
+/*blue sign up area*/
+.action {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+.blue,
+.blueText,
+.signUp {
+    grid-row-start: 1;
+    grid-column: 2;
+}
+
+.blue {
+    background-color: rgb(75, 128, 237);
+    border-radius: 15px;
+    margin: 100px 0;
+    grid-column: 2 / span 2;
+    padding: 100px 100px 20px 100px;
+    color: white;
+}
+.blueText {
+    text-align: justify;
+    align-self: center;
+    grid-column: 2;
+    padding-left: 100px;
+}
+.blueText p {
+    margin: 0;
+    padding: 0;
+}
+.signUp {
+    text-align: center;
+    align-self: center;
+    grid-column: 3;
+}
+.button2 {
+    color: white;
+    background-color: rgb(75, 128, 237);
+    border-color: white;
+    border: solid;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+/*This is page 2*/
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e8eaef;
+}
+article {
+    border: 3px solid #eae7e7;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 5px #5c5c5c;
+    margin: 50px 10px;
+    width: 30%;
+}
+/*This is page 3*/
+.wCard {
+    border: 1px solid #76bdd3;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 12px #978d8d;
+    text-align: center;
+    margin: 10px;
+    width: 400px;
+    background-color: white;
+}
+#weatherLive {
+    background-color: #e8eaef;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.wetherHeader {
+    text-align: center;
+    background-color: #e8eaef;
+    margin: auto;
+    padding-top: 50px;
+}
+
+/*Other (all pages)*/
+body {
+    font-family: "font2", sans-serif;
+    margin: auto;
+}
+
+header {
+    color: white;
+    background-color: rgb(33, 41, 53);
+    overflow: auto;
+}
+footer {
+    font-family: "font3", sans-serif;
+    color: white;
+    background-color: rgb(33, 41, 53);
+    text-align: center;
+    overflow: auto;
+}
